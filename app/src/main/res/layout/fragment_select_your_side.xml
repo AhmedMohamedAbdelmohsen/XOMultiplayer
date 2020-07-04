@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".main.destinations.SelectYourSideFragment">
+
+    <TextView
+        android:id="@+id/select_side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_side"
+        android:textColor="@color/darkblue"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/image_o"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/o"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_side" />
+
+    <EditText
+        android:id="@+id/et_o_player"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:hint="@string/name_of_o_player"
+        android:maxLength="10"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/image_o"
+        app:layout_constraintStart_toStartOf="@+id/image_o"
+        app:layout_constraintTop_toBottomOf="@+id/image_o" />
+
+    <ImageView
+        android:id="@+id/image_x"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_side" />
+
+    <EditText
+        android:id="@+id/et_x_player"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:hint="@string/name_of_x_player"
+        android:maxLength="10"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/image_x"
+        app:layout_constraintStart_toStartOf="@+id/image_x"
+        app:layout_constraintTop_toBottomOf="@+id/image_x" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/darkblue"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:text="@string/continue_btn"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_o_player" />
+</androidx.constraintlayout.widget.ConstraintLayout>
